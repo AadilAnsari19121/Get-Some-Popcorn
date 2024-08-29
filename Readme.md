@@ -56,11 +56,11 @@ The following languages, frameworks and APIs were used:
 
 When visiting this URL, the user is greeted with a page of the latest movies that are now playing in theaters.
 
-![alt](IMG/image1.png)
+![alt](./Get-Some-Popcorn/IMG/image1.png)
 
 Clicking on each movie opens up its details in a modal. Within the modal, users can view the trailer. Overviews, release dates and ratings for the movie are also visible.
 
-![alt](IMG/image2.png)
+![alt](./Get-Some-Popcorn/IMG/image2.png)
 
 To get the data for each movie, I had to run `$.getJSON` twice, once for the results and the second time to get particular data for each of those results. Additionally, I used a "for" loop after the first one to target where the data from `movieSearchResults` is. To make it possible for the app to display movies categorized by genre and searched movies, I initiated an empty HTML string and then built a new HTML string to overwrite it (using ` .append()``). To change the label on the page accordingly, I had it attached via  `.html()`to the`movieGenreLabel`id from the`index.html`file. You can see`console.log()` throughout the code snippet, because I was testing my code at every point to make pinpointing bugs easier.
 
